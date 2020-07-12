@@ -11,6 +11,19 @@ nav {
   color: white;
 }
 
+
+
+
+.navitems {
+
+  margin: auto 30px;
+}
+
+.farright {
+  margin-left: 10px;
+  padding-right: 10px
+}
+
 .nav-links{
   width: 50%;
 display: flex;

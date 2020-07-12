@@ -7,14 +7,28 @@ function NavB() {
 
 
   return (
-   <nav class="navbar navbar-light">
-   <h3 class="nav-logo">Logo   </h3>
-   <ul class="nav-links">
-        <Link to='/'><li>Home</li></Link>
-       <Link to='/about'><li>About</li></Link>
-       <Link to='/creater'>  <li>Creater</li></Link>
-   </ul>
-    </nav>
+
+    <Navbar bg="dark" variant="dark">
+<Navbar.Brand href="#home">
+  <img
+    alt=""
+    src="/logo.svg"
+    width="30"
+    height="30"
+    className="d-inline-block align-top"
+  />{' '}
+BLOGNAME!!!
+</Navbar.Brand>
+        <Nav className="ml-auto">
+      <Nav.Link className="navitems" href="/">Home</Nav.Link>
+      <Nav.Link className="navitems" href="/about">About</Nav.Link>
+      <Nav.Link className="navitems farright" href="/creater">Creater</Nav.Link>
+    </Nav>
+      </Navbar>
+
+
+
+
   );
 }
 
