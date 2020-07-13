@@ -35,6 +35,16 @@ connection.once("open", () => {
 })
 
 
+
+//moirt the route files and allows them to be used for the api CRUD funtionality
+const adminsRouter = require('./routes/admins');
+const postsRouter = require('./routes/posts');
+
+app.use('/posts', postsRouter);
+app.use('/admins', adminsRouter);
+
+
+
 // starts the server listiening
 app.listen(port, () => {
   console.log(`Server is runniung on port:${port}`);
