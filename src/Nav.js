@@ -12,14 +12,14 @@ function NavB() {
 <Navbar.Brand href="#home">
   <img
     alt=""
-    src="/logo.svg"
+    src=""
     width="30"
     height="30"
     className="d-inline-block align-top"
   />{' '}
 BLOGNAME!!!
 </Navbar.Brand>
-        <Nav className="ml-auto">
+        <Nav className="ml-auto navbar ">
       <Nav.Link className="navitems" href="/">Home</Nav.Link>
       <Nav.Link className="navitems" href="/about">About</Nav.Link>
       <Nav.Link className="navitems farright" href="/creater">Creater</Nav.Link>

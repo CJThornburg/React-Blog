@@ -5,6 +5,8 @@ import About from './About';
 import Creater from './Creater'
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Layout} from './components/Layout';
+import Home from "./Home";
+import Post from "./Post";
 
 
 
@@ -18,6 +20,7 @@ function App() {
     <Route path="/" exact component={Home} />
     <Route path="/about" component={About} />
     <Route path="/creater" component={Creater} />
+    <Route path="/post" component={Post} />
     </Switch>
     </Layout>
     </div>
@@ -28,11 +31,6 @@ function App() {
 
 
 
-// This is like adding abother component page
-const Home = () => (
-  <div>
-    <h1>Home Page</h1>
-  </div>
-);
+
 
 export default App;
