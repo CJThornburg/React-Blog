@@ -7,7 +7,7 @@ let Post = require('../models/posts.model');
 
 router.route('/').get((req, res) => {
 
-// finds all admin in db and returns result in json
+// finds all admin in db and returns result in json /posts/
   Post.find()
   // then all the users found in the db are then returned as admins to the client
   .then(posts => res.json(posts))
@@ -16,6 +16,8 @@ router.route('/').get((req, res) => {
 });
 
 
+
+// adds on /posts/add
 router.route('/add').post((req, res) => {
   const title = req.body.title;
   const blog = req.body.blog;
@@ -34,7 +36,7 @@ newPost.save()
 });
 
 
-// get request
+// get request /posts/id number
 // if you go to the route it pulls info from db that has that id
 router.route('/:id').get((req, res) => {
   Post.findById(req.params.id)
@@ -45,7 +47,7 @@ router.route('/:id').get((req, res) => {
 })
 
 
-// delete request
+// delete request  /posts/id number
 router.route('/:id').delete((req, res) => {
   Post.findByIdAndDelete(req.params.id)
   .then(() => res.json('Post deleted.'))
@@ -53,7 +55,7 @@ router.route('/:id').delete((req, res) => {
 });
 
 
-// update post route
+// update post route /posts/update/id number
 router.route('/update/:id').post((req, res) => {
   Post.findById(req.params.id)
 
