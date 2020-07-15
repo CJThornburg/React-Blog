@@ -2,11 +2,12 @@ import React from 'react';
 import './App.css';
 import Nav from "./Nav";
 import About from './About';
-import Creater from './Creater'
+import Creater from './Creater';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Layout} from './components/Layout';
 import Home from "./Home";
 import Post from "./Post";
+
 
 
 

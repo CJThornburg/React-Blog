@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Link} from 'react-router-dom';
+
 import {Nav, Navbar} from 'react-bootstrap';
 
 function NavB() {
@@ -17,8 +17,9 @@ function NavB() {
     height="30"
     className="d-inline-block align-top"
   />{' '}
-BLOGNAME!!!
+SentimentallySchenell
 </Navbar.Brand>
+
         <Nav className="ml-auto navbar ">
       <Nav.Link className="navitems" href="/">Home</Nav.Link>
       <Nav.Link className="navitems" href="/about">About</Nav.Link>
