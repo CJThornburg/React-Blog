@@ -23,6 +23,7 @@ SentimentallySchenell
         <Nav className="ml-auto navbar ">
       <Nav.Link className="navitems" href="/">Home</Nav.Link>
       <Nav.Link className="navitems" href="/about">About</Nav.Link>
+      <Nav.Link className="navitems" href="/post">Post</Nav.Link>
       <Nav.Link className="navitems farright" href="/creater">Creater</Nav.Link>
     </Nav>
       </Navbar>
